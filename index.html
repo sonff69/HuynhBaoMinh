@@ -97,25 +97,25 @@
             animation: floatDelayed 10s ease-in-out infinite;
         }
 
-        /* iOS Glassmorphism Bubble Style (Độ mờ cố định theo ảnh mẫu) */
+        /* iOS Glassmorphism Bubble Style (Trong suốt 80% - 20% Opacity) */
         .ios-glass-bubble {
-            background: rgba(255, 255, 255, 0.45) !important; /* Độ trong suốt cố định như ảnh mẫu */
-            backdrop-filter: blur(16px) saturate(180%) !important;
-            -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
-            border: 1px solid rgba(255, 255, 255, 0.6) !important;
+            background: rgba(255, 255, 255, 0.20) !important; /* Trong suốt đến 80% */
+            backdrop-filter: blur(24px) saturate(180%) !important;
+            -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+            border: 1px solid rgba(255, 255, 255, 0.4) !important;
             box-shadow: 
-                inset 0 1px 1px rgba(255, 255, 255, 0.6), /* Đường viền bóng sáng nhẹ phía trong */
-                inset 0 -1px 1px rgba(0, 0, 0, 0.03),
-                0 10px 30px rgba(0, 0, 0, 0.08) !important; /* Bóng đổ mềm bên ngoài */
+                inset 0 1.5px 2px rgba(255, 255, 255, 0.5), /* Viền bóng sáng nhẹ phía trong */
+                inset 0 -1px 1px rgba(0, 0, 0, 0.02),
+                0 10px 30px rgba(0, 0, 0, 0.1) !important; /* Bóng đổ mềm bên ngoài */
             border-radius: 24px !important;
             transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
         
         .ios-glass-bubble:hover {
-            background: rgba(255, 255, 255, 0.52) !important;
+            background: rgba(255, 255, 255, 0.30) !important; /* Trong suốt 70% khi hover */
             box-shadow: 
-                inset 0 1.5px 2px rgba(255, 255, 255, 0.7),
-                0 15px 45px rgba(0, 0, 0, 0.12) !important;
+                inset 0 2px 3px rgba(255, 255, 255, 0.6),
+                0 15px 45px rgba(0, 0, 0, 0.15) !important;
             transform: translateY(-2px);
         }
 
@@ -135,13 +135,13 @@
 
         /* Step badges style */
         .step-badge {
-            background: rgba(15, 23, 42, 0.1);
+            background: rgba(15, 23, 42, 0.15);
             color: #0f172a;
-            font-weight: 800;
+            font-weight: 850;
         }
     </style>
 </head>
-<body class="font-sans text-slate-955 antialiased min-h-screen">
+<body class="font-sans text-slate-950 antialiased min-h-screen">
 
     <!-- Decors: Dreamy background floating elements -->
     <div class="hidden lg:block fixed top-12 left-10 z-0 pointer-events-none opacity-40 animate-float-slow">
@@ -162,15 +162,15 @@
     <nav class="sticky top-0 z-50 px-4 py-3 md:px-8">
         <div class="max-w-6xl mx-auto ios-glass-bubble px-6 py-3 flex justify-between items-center">
             <a href="#" class="flex items-center gap-2">
-                <span class="font-hand text-3xl font-bold text-slate-950">Bảo Minh.</span>
+                <span class="font-hand text-3xl font-bold text-slate-955">Bảo Minh.</span>
                 <span class="hidden md:inline-block bg-white/60 text-slate-900 text-[11px] px-2.5 py-0.5 rounded-full font-bold border border-white/80">ULIS Student</span>
             </a>
             
-            <div class="hidden md:flex items-center gap-6 text-sm font-bold text-slate-900">
-                <a href="#about" class="hover:text-indigo-800 transition-colors">Giới thiệu</a>
-                <a href="#goals" class="hover:text-indigo-800 transition-colors">Mục tiêu</a>
-                <a href="#tasks" class="hover:text-indigo-800 transition-colors">6 Nhiệm vụ</a>
-                <a href="#reflections" class="hover:text-indigo-800 transition-colors">Chiêm nghiệm</a>
+            <div class="hidden md:flex items-center gap-6 text-sm font-bold text-slate-955">
+                <a href="#about" class="hover:text-indigo-900 transition-colors">Giới thiệu</a>
+                <a href="#goals" class="hover:text-indigo-900 transition-colors">Mục tiêu</a>
+                <a href="#tasks" class="hover:text-indigo-900 transition-colors">6 Nhiệm vụ</a>
+                <a href="#reflections" class="hover:text-indigo-900 transition-colors">Chiêm nghiệm</a>
             </div>
 
             <div>
@@ -187,7 +187,7 @@
     <!-- Main Content Wrapper -->
     <main class="max-w-6xl mx-auto px-4 md:px-8 py-10 relative z-10 space-y-24">
 
-        <!-- Hero Section (Đóng khung bong bóng cho cụm chữ và dịch phải bằng lg:pl-16 xl:pl-28) -->
+        <!-- Hero Section (Đóng khung bong bóng trong suốt cho cụm chữ và dịch phải bằng lg:pl-16 xl:pl-28) -->
         <section id="hero" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center min-h-[70vh] py-8">
             <div class="col-span-1 lg:col-span-7 ios-glass-bubble p-8 md:p-10 space-y-6 lg:ml-12 xl:ml-20">
                 <div class="inline-flex items-center gap-2 px-3 py-1 bg-white/80 border border-slate-200 rounded-full shadow-sm text-slate-900 text-xs font-bold animate-pulse">
@@ -198,7 +198,7 @@
                     Huỳnh Bảo Minh
                 </h1>
                 <p class="font-hand text-3xl text-indigo-900 -mt-2">Sư phạm Tiếng Anh — ULIS</p>
-                <p class="text-base md:text-lg text-slate-900 leading-relaxed max-w-xl font-bold">
+                <p class="text-base md:text-lg text-slate-955 leading-relaxed max-w-xl font-extrabold">
                     Một người tin rằng dạy học không chỉ là truyền đạt kiến thức, mà là thắp lên trong người học một ngọn lửa mà họ sẽ tự giữ lấy suốt đời. Học phần <span class="underline decoration-indigo-600 decoration-wavy font-black text-indigo-950">Nhập môn Công nghệ số & AI</span> đã mở ra cho mình một hành trình hoàn toàn mới về cách công nghệ tái định nghĩa giáo dục hiện đại.
                 </p>
                 <div class="flex flex-wrap gap-4 pt-2">
@@ -251,7 +251,7 @@
                         </p>
                         <p class="text-base font-extrabold text-indigo-950 border-l-4 border-indigo-400 pl-3 pt-2">Giới thiệu bản thân</p>
                         <p>
-                            Xin chào mọi người, mình là Huỳnh Bảo Minh - sinh viên ngành Sư phạm Tiếng Anh - trường Đại học Ngoại ngữ, một người tin rằng dạy học không chỉ là truyền đạt kiến thức, mà là thắp lên trong người khác một ngọn lửa mà họ sẽ tự giữ lấy suốt đời.
+                            Xin chào mọi người, mình là Huỳnh Bảo Minh - sinh viên ngành Sư phạm Tiếng Anh - trường Đại học Ngoại ngữ, một người tin rằng dạy học không chỉ là truyền đạt kiến thức, mà là thắp lên trong người học một ngọn lửa mà họ sẽ tự giữ lấy suốt đời.
                         </p>
                         <p>
                             Đối lập với hình dung về một giáo viên tiếng Anh chỉ ngồi chấm bài và đọc giáo trình, mình còn là người thích quan sát - quan sát cách con người học, cách họ vấp ngã rồi đứng dậy với một câu từ mới, một cách diễn đạt mới. Đó là thứ khiến mình chọn nghề này và chưa bao giờ hối hận. Mình là sinh viên ngành Sư phạm Tiếng Anh - một ngành mà nhiều người vẫn nghĩ chỉ cần giỏi tiếng Anh là đủ. Nhưng thực tế, làm giáo viên trong thời đại này đòi hỏi nhiều hơn thế rất nhiều.
@@ -446,7 +446,7 @@
                                 </div>
                                 <div class="flex gap-3 items-start ios-glass-bubble p-2.5 border border-white/60">
                                     <span class="step-badge rounded px-2 py-0.5 shrink-0">B4</span>
-                                    <p><strong>Vào thư mục vừa tạo:</strong> Nhấp đúp chuột trái vào thư mục <span class="text-indigo-955 font-black">ThucHanh_HuynhBaoMinh</span> để bắtv đầu làm việc bên trong không gian mới này.</p>
+                                    <p><strong>Vào thư mục vừa tạo:</strong> Nhấp đúp chuột trái vào thư mục <span class="text-indigo-955 font-black">ThucHanh_HuynhBaoMinh</span> để bắt đầu làm việc bên trong không gian mới này.</p>
                                 </div>
                                 <div class="flex gap-3 items-start ios-glass-bubble p-2.5 border border-white/60">
                                     <span class="step-badge rounded px-2 py-0.5 shrink-0">B5</span>
@@ -537,14 +537,14 @@
                         <div id="task-content-3" class="task-content hidden space-y-6">
                             <div class="flex justify-between items-start flex-wrap gap-4 border-b border-white/40 pb-4">
                                 <div>
-                                    <h3 class="text-2xl font-serif font-black text-indigo-950">Nhiệm vụ 3: Kỹ thuật viết Prompt học thuật</h3>
+                                    <h3 class="text-2xl font-serif font-black text-indigo-955">Nhiệm vụ 3: Kỹ thuật viết Prompt học thuật</h3>
                                     <p class="text-xs text-indigo-700 font-bold mt-1">Nghiên cứu ba cấp độ Prompt cho các tác vụ học thuật khác nhau</p>
                                 </div>
                                 <span class="text-xs font-black px-2.5 py-1 bg-amber-100 text-amber-900 rounded-full font-bold">Kỹ thuật Chain-of-Thought</span>
                             </div>
                             
                             <div class="space-y-4 text-xs text-slate-955 max-h-[380px] overflow-y-auto pr-2 font-bold">
-                                <p class="text-sm font-bold text-slate-950">Minh họa chi tiết 3 Tác vụ lớn đã thử nghiệm thành công:</p>
+                                <p class="text-sm font-bold text-slate-955">Minh họa chi tiết 3 Tác vụ lớn đã thử nghiệm thành công:</p>
                                 
                                 <div class="ios-glass-bubble p-3.5 border border-slate-200 space-y-2">
                                     <p class="font-extrabold text-indigo-950">Tác vụ 1: Tóm tắt bài đọc học thuật (Bài viết về AI trên VnExpress)</p>
@@ -743,8 +743,8 @@
 
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-slate-955 text-slate-300 mt-24 py-12 relative z-10 border-t border-slate-800">
+    <!-- Footer (Chuyển sang màu đen tuyền bg-black không chìm nền) -->
+    <footer class="bg-black text-slate-300 mt-24 py-12 relative z-10 border-t border-slate-900">
         <div class="max-w-6xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
             <div class="space-y-3">
                 <span class="font-hand text-3xl font-bold text-white">Bảo Minh.</span>
