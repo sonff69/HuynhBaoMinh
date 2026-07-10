@@ -12,33 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Itim&display=swap" rel="stylesheet">
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-                        serif: ['"Playfair Display"', 'serif'],
-                        hand: ['"Itim"', 'cursive'],
-                    },
-                    colors: {
-                        pastel: {
-                            blue: '#f0f7ff',
-                            accent: '#2563eb',
-                            dark: '#0f172a',
-                            paper: '#ffffff',
-                            amber: '#b45309'
-                        }
-                    },
-                    animation: {
-                        'float-slow': 'float 8s ease-in-out infinite',
-                        'float-delayed': 'floatDelayed 10s ease-in-out infinite',
-                        'pulse-soft': 'pulseSoft 3s ease-in-out infinite'
-                    }
-                }
-            }
-        }
-    </script>
     <style>
         /* Custom scrollbar */
         ::-webkit-scrollbar {
@@ -141,7 +114,7 @@
         }
     </style>
 </head>
-<body class="font-sans text-slate-950 antialiased min-h-screen">
+<body class="font-sans text-slate-955 antialiased min-h-screen">
 
     <!-- Decors: Dreamy background floating elements -->
     <div class="hidden lg:block fixed top-12 left-10 z-0 pointer-events-none opacity-40 animate-float-slow">
@@ -167,10 +140,10 @@
             </a>
             
             <div class="hidden md:flex items-center gap-6 text-sm font-bold text-slate-955">
-                <a href="#about" class="hover:text-indigo-900 transition-colors">Giới thiệu</a>
-                <a href="#goals" class="hover:text-indigo-900 transition-colors">Mục tiêu</a>
-                <a href="#tasks" class="hover:text-indigo-900 transition-colors">6 Nhiệm vụ</a>
-                <a href="#reflections" class="hover:text-indigo-900 transition-colors">Chiêm nghiệm</a>
+                <a href="#about" class="hover:text-indigo-800 transition-colors">Giới thiệu</a>
+                <a href="#goals" class="hover:text-indigo-800 transition-colors">Mục tiêu</a>
+                <a href="#tasks" class="hover:text-indigo-800 transition-colors">6 Nhiệm vụ</a>
+                <a href="#reflections" class="hover:text-indigo-800 transition-colors">Chiêm nghiệm</a>
             </div>
 
             <div>
@@ -201,6 +174,18 @@
                 <p class="text-base md:text-lg text-slate-955 leading-relaxed max-w-xl font-extrabold">
                     Một người tin rằng dạy học không chỉ là truyền đạt kiến thức, mà là thắp lên trong người học một ngọn lửa mà họ sẽ tự giữ lấy suốt đời. Học phần <span class="underline decoration-indigo-600 decoration-wavy font-black text-indigo-950">Nhập môn Công nghệ số & AI</span> đã mở ra cho mình một hành trình hoàn toàn mới về cách công nghệ tái định nghĩa giáo dục hiện đại.
                 </p>
+                
+                <!-- MXH Capsule Buttons -->
+                <div class="flex items-center gap-3 pt-2">
+                    <span class="text-xs font-bold text-slate-900">Kết nối với mình:</span>
+                    <a href="https://www.facebook.com/share/1bp9wEK1Y7/?mibextid=wwXIfr" target="_blank" class="w-8 h-8 rounded-full bg-white/80 hover:bg-white flex items-center justify-center text-indigo-950 shadow-sm border border-slate-200 transition-all hover:scale-110">
+                        <i data-lucide="facebook" class="w-4 h-4"></i>
+                    </a>
+                    <a href="https://www.instagram.com/hhb.mmmm?igsh=ZGVnaXdpbTZudzhw&utm_source=qr" target="_blank" class="w-8 h-8 rounded-full bg-white/80 hover:bg-white flex items-center justify-center text-indigo-955 shadow-sm border border-slate-200 transition-all hover:scale-110">
+                        <i data-lucide="instagram" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
                 <div class="flex flex-wrap gap-4 pt-2">
                     <a href="#tasks" class="bg-indigo-950 text-white hover:bg-indigo-900 font-extrabold px-6 py-3.5 rounded-2xl shadow-sm transition-all duration-300 flex items-center gap-2">
                         <i data-lucide="compass" class="w-5 h-5 text-indigo-300"></i>
@@ -339,7 +324,7 @@
                 <div class="space-y-3 max-w-2xl">
                     <h3 class="text-xl md:text-2xl font-serif font-bold text-white">Toàn bộ hồ sơ lưu trữ dự án số</h3>
                     <p class="text-indigo-200 text-sm font-bold leading-relaxed">
-                        Toàn bộ file báo cáo chi tiết, hình ảnh minh chứng thực hành rõ nét và các tài liệu chuyên ngành liên quan đã được sắp xếp khoa học trong thư mục Google Drive để thuận tiện cho việc lưu trữ và đối chiếu.
+                        Toàn bộ file báo cáo chi tiết, hình ảnh minh chứng thực hành rõ nét và các tài liệu chuyên ngành liên quan đã được thuận tiện cho việc lưu trữ và đối chiếu.
                     </p>
                 </div>
                 <div class="shrink-0">
@@ -586,7 +571,7 @@
                             <div class="flex flex-col md:flex-row gap-6 items-center ios-glass-bubble p-4 border border-white/60">
                                 <div class="polaroid rotate-1 shrink-0 w-44">
                                     <img src="Hình 3.jpg" alt="Thành viên nhóm Bảo Minh" class="w-full h-28 object-cover rounded">
-                                    <p class="font-hand text-sm text-indigo-950 text-center mt-2 font-bold">Biên tập viên Bảo Minh</p>
+                                    <p class="font-hand text-sm text-indigo-955 text-center mt-2 font-bold">Biên tập viên Bảo Minh</p>
                                 </div>
                                 <div class="space-y-2 text-xs text-slate-955 font-bold leading-relaxed">
                                     <p class="text-indigo-955 font-extrabold border-b border-indigo-100/50 pb-1">Nhật ký giải quyết 3 Thách thức lớn:</p>
@@ -686,7 +671,8 @@
                         <p class="font-hand text-2xl text-slate-955">"Sau tất cả..."</p>
                     </div>
                 </div>
-                <p class="text-xs text-slate-500 font-bold italic">Bảo Minh — Điểm khởi đầu mới</p>
+                <!-- Khắc phục chữ chú thích bị chìm bằng cách chuyển sang màu đen tuyền trên nền bong bóng trắng sữa mờ 75% -->
+                <p class="text-xs text-slate-955 font-black tracking-wide bg-white/75 px-3.5 py-1.5 rounded-full shadow-sm mt-3 inline-block">Bảo Minh — Điểm khởi đầu mới</p>
             </div>
 
             <!-- Thay thế nguyên văn tài liệu ND 2.docx - Đóng khung trong suốt ios-glass-bubble -->
@@ -723,12 +709,13 @@
                             Không phải một bài tập cụ thể, mà là thói quen dừng lại và suy nghĩ trước khi hành động trong môi trường số - trước khi chia sẻ, trước khi nhờ AI, trước khi đăng gì đó lên mạng. Thói quen nhỏ, nhưng mình tin sẽ theo mình lâu dài, kể cả sau này khi mình đứng lớp hay điều hành trung tâm tiếng Anh của riêng mình.
                         </p>
 
+                        <!-- Đã điều chỉnh bỏ dấu chấm và làm to bằng các chữ còn lại -->
                         <p class="text-base font-extrabold text-indigo-950 border-l-4 border-indigo-400 pl-3 pt-2">Thách thức thực sự</p>
-                        <ul class="space-y-1.5 list-disc list-inside text-xs">
-                            <li><strong>Cân bằng giữa dùng công cụ hỗ trợ và tự làm thật:</strong> mình tự đặt nguyên tắc: AI có thể giúp trình bày, nhưng ý tưởng phải là của mình trước.</li>
-                            <li><strong>Làm Portfolio như một sản phẩm thật, không phải nộp cho có:</strong> mỗi lần muốn viết nhanh cho xong, mình lại tự hỏi liệu một năm sau đọc lại có tự hào không.</li>
-                            <li><strong>Viết thật về bản thân:</strong> thách thức mình ít ngờ nhất, không diễn, không tô vẽ.</li>
-                        </ul>
+                        <div class="space-y-3 pl-3 text-sm md:text-base text-slate-955 font-bold">
+                            <p><strong>Cân bằng giữa dùng công cụ hỗ trợ và tự làm thật:</strong> mình tự đặt nguyên tắc: AI có thể giúp trình bày, nhưng ý tưởng phải là của mình trước.</p>
+                            <p><strong>Làm Portfolio như một sản phẩm thật, không phải nộp cho có:</strong> mỗi lần muốn viết nhanh cho xong, mình lại tự hỏi liệu một năm sau đọc lại có tự hào không.</p>
+                            <p><strong>Viết thật về bản thân:</strong> thách thức mình ít ngờ nhất, không diễn, không tô vẽ.</p>
+                        </div>
 
                         <p class="text-base font-extrabold text-indigo-950 border-l-4 border-indigo-400 pl-3 pt-2">Sau tất cả</p>
                         <p>
@@ -744,11 +731,21 @@
     </main>
 
     <!-- Footer (Chuyển sang màu đen tuyền bg-black không chìm nền) -->
-    <footer class="bg-black text-slate-300 mt-24 py-12 relative z-10 border-t border-slate-900">
+    <footer class="bg-black text-slate-300 mt-24 py-12 relative z-10 border-t border-slate-800">
         <div class="max-w-6xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
             <div class="space-y-3">
                 <span class="font-hand text-3xl font-bold text-white">Bảo Minh.</span>
                 <p class="text-xs text-slate-500 font-bold">Cuốn portfolio lưu trữ hành trình số hóa năng lực bản thân.</p>
+                
+                <!-- Social Icons in Footer -->
+                <div class="flex items-center gap-3 pt-2">
+                    <a href="https://www.facebook.com/share/1bp9wEK1Y7/?mibextid=wwXIfr" target="_blank" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-white transition-colors">
+                        <i data-lucide="facebook" class="w-4 h-4"></i>
+                    </a>
+                    <a href="https://www.instagram.com/hhb.mmmm?igsh=ZGVnaXdpbTZudzhw&utm_source=qr" target="_blank" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-white transition-colors">
+                        <i data-lucide="instagram" class="w-4 h-4"></i>
+                    </a>
+                </div>
             </div>
             <div class="space-y-2 font-bold">
                 <h4 class="font-bold text-white text-xs uppercase tracking-wider">Thông tin sinh viên</h4>
