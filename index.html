@@ -6,7 +6,7 @@
     <title>Huỳnh Bảo Minh | Digital Portfolio</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Playfair Display, Plus Jakarta Sans & Itim (Chuyên viết tay Tiếng Việt chuẩn hóa) -->
+    <!-- Google Fonts: Playfair Display, Plus Jakarta Sans & Itim (Viết tay chuẩn Tiếng Việt, không lỗi ký tự) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Itim&display=swap" rel="stylesheet">
@@ -71,7 +71,7 @@
             background-attachment: fixed;
             background-size: cover;
             background-position: center;
-            filter: brightness(0.70); /* Giảm độ sáng nền đi đúng 30% */
+            filter: brightness(0.70); /* Giảm độ sáng nền đi 30% */
             z-index: -2;
             pointer-events: none;
         }
@@ -99,14 +99,14 @@
 
         /* iOS Glassmorphism Bubble Style */
         .ios-glass-bubble {
-            background: rgba(255, 255, 255, 0.45); /* Độ trong suốt tinh tế */
+            background: rgba(255, 255, 255, 0.45); /* Trong suốt mượt mà */
             backdrop-filter: blur(20px) saturate(190%);
             -webkit-backdrop-filter: blur(20px) saturate(190%);
             border: 1px solid rgba(255, 255, 255, 0.55);
             box-shadow: 
-                inset 0 1.5px 2px rgba(255, 255, 255, 0.7), /* Đường viền bóng sáng bên trong */
+                inset 0 1.5px 2px rgba(255, 255, 255, 0.7), /* Bóng nổi bên trong viền */
                 inset 0 -1px 1px rgba(0, 0, 0, 0.05),
-                0 10px 30px rgba(0, 0, 0, 0.08); /* Bóng đổ mềm bên ngoài */
+                0 10px 30px rgba(0, 0, 0, 0.08); /* Bóng đổ bên dưới */
             border-radius: 28px;
             transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
@@ -187,9 +187,9 @@
     <!-- Main Content Wrapper -->
     <main class="max-w-6xl mx-auto px-4 md:px-8 py-10 relative z-10 space-y-24">
 
-        <!-- Hero Section -->
+        <!-- Hero Section (Dịch phải cụm chữ bằng lg:pl-16 xl:pl-28) -->
         <section id="hero" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center min-h-[70vh] py-8">
-            <div class="col-span-1 lg:col-span-7 space-y-6">
+            <div class="col-span-1 lg:col-span-7 space-y-6 lg:pl-16 xl:pl-28">
                 <div class="inline-flex items-center gap-2 px-3 py-1 bg-white/80 border border-slate-200 rounded-full shadow-sm text-slate-900 text-xs font-bold animate-pulse">
                     <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-500"></i>
                     <span>Chào mừng ghé thăm cuốn sổ tay số của mình</span>
@@ -243,13 +243,13 @@
                     </div>
                     <div class="space-y-4 text-slate-950 leading-relaxed font-bold">
                         <p>
-                            Có những môn học mà bạn biết ngay từ đầu mình sẽ cần - và có những môn học mà mãi đến giữa chừng bạn mới nhận ra tại sao nó lại quan trọng đến vậy. Với mình, <span class="font-black text-indigo-950 underline decoration-indigo-400">Nhập môn Công nghệ số và Ứng dụng Trí tuệ Nhân tạo</span> thuộc về nhóm thứ hai. [ND.docx]
+                            Có những môn học mà bạn biết ngay từ đầu mình sẽ cần - và có những môn học mà mãi đến giữa chừng bạn mới nhận ra tại sao nó lại quan trọng đến vậy. Với mình, <span class="font-black text-indigo-950 underline decoration-indigo-400">Nhập môn Công nghệ số và Ứng dụng Trí tuệ Nhân tạo</span> thuộc về nhóm thứ hai.
                         </p>
                         <p>
-                            Là một sinh viên ngành Sư phạm Tiếng Anh, mình từng nghĩ chỉ cần nắm vững phương pháp giảng dạy truyền thống là đủ. Nhưng thế giới đang thay đổi quá nhanh. Nếu giáo viên không chủ động thấu hiểu công nghệ, chúng ta sẽ lạc hậu trước chính học sinh của mình. [ND.docx]
+                            Là một sinh viên ngành Sư phạm Tiếng Anh, mình từng nghĩ chỉ cần nắm vững phương pháp giảng dạy truyền thống là đủ. Nhưng thế giới đang thay đổi quá nhanh. Nếu giáo viên không chủ động thấu hiểu công nghệ, chúng ta sẽ lạc hậu trước chính học sinh của mình.
                         </p>
                         <p>
-                            Ngoài học tập, mình yêu thích đọc sách về tâm lý giáo dục và viết lách để đối thoại với chính mình. Đối với mình, cuốn portfolio này không đơn thuần là một nhiệm vụ trả điểm, mà là nơi ghi chép chân thực sự trưởng thành và phản tư tư duy số của bản thân. [ND.docx]
+                            Ngoài học tập, mình yêu thích đọc sách về tâm lý giáo dục và viết lách để đối thoại với chính mình. Đối với mình, cuốn portfolio này không đơn thuần là một nhiệm vụ trả điểm, mà là nơi ghi chép chân thực sự trưởng thành và phản tư tư duy số của bản thân.
                         </p>
                     </div>
                 </div>
@@ -261,7 +261,7 @@
                             <p class="font-hand text-2xl text-slate-950">Góc đọc sách & Suy ngẫm</p>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-900 font-bold italic">"Công nghệ là bệ phóng, con người là linh hồn"</p>
+                    <p class="text-xs text-slate-500 font-bold italic">"Công nghệ là bệ phóng, con người là linh hồn"</p>
                 </div>
             </div>
         </section>
@@ -282,9 +282,9 @@
                     <span class="text-xs font-black uppercase tracking-wider text-slate-950 bg-white/70 px-3 py-1 rounded-full">Ngắn hạn</span>
                     <h3 class="text-xl font-black text-slate-950 mt-4 mb-3">Tích lũy & Bứt phá</h3>
                     <ul class="space-y-2 text-sm text-slate-950 list-disc list-inside font-bold">
-                        <li>Đạt kết quả xuất sắc môn Nhập môn Công nghệ số & AI [ND.docx]</li>
-                        <li>Duy trì GPA học thuật xuất sắc ổn định ở mức 3.6+ [ND.docx]</li>
-                        <li>Sử dụng thành thạo bộ công cụ hỗ trợ thiết kế giáo án thông minh [ND.docx]</li>
+                        <li>Đạt kết quả xuất sắc môn Nhập môn Công nghệ số & AI</li>
+                        <li>Duy trì GPA học thuật xuất sắc ổn định ở mức 3.6+</li>
+                        <li>Sử dụng thành thạo bộ công cụ hỗ trợ thiết kế giáo án thông minh</li>
                     </ul>
                 </div>
 
@@ -296,9 +296,9 @@
                     <span class="text-xs font-black uppercase tracking-wider text-slate-950 bg-white/70 px-3 py-1 rounded-full">Trung hạn (3-4 năm)</span>
                     <h3 class="text-xl font-black text-slate-950 mt-4 mb-3">Thực hành Sư phạm</h3>
                     <ul class="space-y-2 text-sm text-slate-950 list-disc list-inside font-bold">
-                        <li>Thực tập giảng dạy thực tế tại trường phổ thông hoặc trung tâm lớn [ND.docx]</li>
-                        <li>Ứng dụng linh hoạt phương pháp giảng dạy kỹ thuật số hiện đại [ND.docx]</li>
-                        <li>Xây dựng tệp học liệu đa phương tiện sáng tạo cho riêng mình [ND.docx]</li>
+                        <li>Thực tập giảng dạy thực tế tại trường phổ thông hoặc trung tâm lớn</li>
+                        <li>Ứng dụng linh hoạt phương pháp giảng dạy kỹ thuật số hiện đại</li>
+                        <li>Xây dựng tệp học liệu đa phương tiện sáng tạo cho riêng mình</li>
                     </ul>
                 </div>
 
@@ -310,9 +310,9 @@
                     <span class="text-xs font-black uppercase tracking-wider text-slate-950 bg-white/70 px-3 py-1 rounded-full">Dài hạn</span>
                     <h3 class="text-xl font-black text-slate-950 mt-4 mb-3">Sáng lập & Kiến tạo</h3>
                     <ul class="space-y-2 text-sm text-slate-950 list-disc list-inside font-bold">
-                        <li>Mở và vận hành một trung tâm Tiếng Anh của riêng mình [ND.docx]</li>
-                        <li>Sáng lập website nhỏ tự học tiếng Anh miễn phí cho cộng đồng [ND.docx]</li>
-                        <li>Xây dựng kênh truyền thông giáo dục qua Tiktok và Instagram [ND.docx]</li>
+                        <li>Mở và vận hành một trung tâm Tiếng Anh của riêng mình</li>
+                        <li>Sáng lập website nhỏ tự học tiếng Anh miễn phí cho cộng đồng</li>
+                        <li>Xây dựng kênh truyền thông giáo dục qua Tiktok và Instagram</li>
                     </ul>
                 </div>
             </div>
@@ -322,7 +322,7 @@
                 <div class="space-y-3 max-w-2xl">
                     <h3 class="text-xl md:text-2xl font-serif font-bold text-white">Toàn bộ hồ sơ lưu trữ dự án</h3>
                     <p class="text-indigo-200 text-sm font-bold leading-relaxed">
-                        Toàn bộ file báo cáo chi tiết, hình ảnh minh chứng chất lượng cao và tài liệu đi kèm đã được sắp xếp khoa học trong thư mục Google Drive để phục vụ lưu trữ và đối chiếu. [ND.docx]
+                        Toàn bộ file báo cáo chi tiết, hình ảnh minh chứng chất lượng cao và tài liệu đi kèm đã được sắp xếp khoa học trong thư mục Google Drive để phục vụ lưu trữ và đối chiếu.
                     </p>
                 </div>
                 <div class="shrink-0">
@@ -475,11 +475,11 @@
                                 </div>
                                 <span class="text-xs font-black px-2.5 py-1 bg-indigo-100 text-indigo-900 rounded-full">10 Tài liệu xuất sắc</span>
                             </div>
-                            <p class="text-sm text-slate-950 font-bold leading-relaxed">
+                            <p class="text-sm text-slate-955 font-bold leading-relaxed">
                                 Để phục vụ đề tài nghiên cứu, mình đã sàng lọc 10 tài liệu chuẩn hóa từ các nguồn học liệu uy tín toàn cầu, phân cấp theo đúng 4 nhóm cấu trúc khoa học:
                             </p>
 
-                            <div class="space-y-4 text-xs text-slate-950 max-h-[350px] overflow-y-auto pr-2 font-bold">
+                            <div class="space-y-4 text-xs text-slate-955 max-h-[350px] overflow-y-auto pr-2 font-bold">
                                 <div class="p-3 bg-white/70 border border-slate-200 rounded-xl space-y-2">
                                     <p class="font-extrabold text-indigo-950">1. Nhóm Cơ sở dữ liệu học thuật (Academic Databases):</p>
                                     <ul class="space-y-1.5 list-disc list-inside pl-2 font-bold">
@@ -520,7 +520,7 @@
                         <div id="task-content-3" class="task-content hidden space-y-6">
                             <div class="flex justify-between items-start flex-wrap gap-4 border-b border-slate-200 pb-4">
                                 <div>
-                                    <h3 class="text-2xl font-serif font-black text-indigo-950">Nhiệm vụ 3: Kỹ thuật viết Prompt hiệu quả</h3>
+                                    <h3 class="text-2xl font-serif font-black text-indigo-950">Nhiệm vụ 3: Kỹ thuật viết Prompt học thuật</h3>
                                     <p class="text-xs text-indigo-700 font-bold mt-1">Nghiên cứu ba cấp độ Prompt cho các tác vụ học thuật khác nhau</p>
                                 </div>
                                 <span class="text-xs font-black px-2.5 py-1 bg-amber-100 text-amber-900 rounded-full">Kỹ thuật Chain-of-Thought</span>
@@ -562,7 +562,7 @@
                                 <span class="text-xs font-black px-2.5 py-1 bg-indigo-100 text-indigo-900 rounded-full">Giải pháp thực tế</span>
                             </div>
 
-                            <p class="text-sm text-slate-950 font-bold leading-relaxed">
+                            <p class="text-sm text-slate-955 font-bold leading-relaxed">
                                 Dự án nhóm 22 quy tụ 5 thành viên (Trưởng nhóm Quỳnh Anh, Bảo Minh, Hạnh Chi, Nhật Vy, Quỳnh Trang) thực hiện sản xuất video trong vòng 1 tuần. Mình đã thiết lập hệ sinh thái 4 công cụ (Google Docs, Zalo, Google Meet, Google Drive) để tối ưu hóa quy trình làm việc.
                             </p>
 
@@ -627,7 +627,7 @@
                                 <div class="p-3 bg-white/70 border border-slate-200 rounded-xl">
                                     <p class="font-extrabold text-indigo-950 mb-1.5">1. Bối cảnh chính sách tại ULIS & ĐHQGHN:</p>
                                     <p class="font-bold text-slate-950">
-                                        Nhà trường không ban hành lệnh cấm đoán cực đoan đối với công cụ AI (ChatGPT, Claude, Gemini) mà tiếp cận nhân văn theo hướng "Chủ động thích ứng và Định hướng trách nhiệm". Thay vì dùng công cụ quét AI tự động nghiêm ngặt như RMIT hay Ivy League, giảng viên ULIS đánh giá năng lực thực chất qua thuyết trình, phản biện trực tiếp và vấn đáp. Điều này yêu cầu sinh viên phải thực chất "tiêu hóa" và biến kiến thức AI thành của mình. [OCR_Page_1]
+                                        Nhà trường không ban hành lệnh cấm đoán cực đoan đối với công cụ AI (ChatGPT, Claude, Gemini) mà tiếp cận nhân văn theo hướng "Chủ động thích ứng và Định hướng trách nhiệm". Thay vì dùng công cụ quét AI tự động nghiêm ngặt như RMIT hay Ivy League, giảng viên ULIS đánh giá năng lực thực chất qua thuyết trình, phản biện trực tiếp và vấn đáp. Điều này yêu cầu sinh viên phải thực chất "tiêu hóa" và biến kiến thức AI thành của mình.
                                     </p>
                                 </div>
 
@@ -679,9 +679,9 @@
                     <h2 class="text-3xl font-serif font-black text-slate-950">Nhìn lại một hành trình</h2>
                 </div>
 
-                <div class="space-y-4 text-slate-950 font-bold leading-relaxed">
+                <div class="space-y-4 text-slate-955 font-bold leading-relaxed">
                     <p>
-                        Nhìn lại một hành trình: Lúc bắt đầu, mình nghĩ đây chỉ là một môn bắt buộc - làm bài, nộp đúng hạn, lấy điểm. Viết đến những dòng này mình mới nhận ra mình đã sai. Học phần này dạy mình nhiều hơn về công nghệ - nó dạy mình cách nhìn nhận bản thân trong một thế giới đang thay đổi quá nhanh, điều mà một sinh viên Sư phạm Tiếng Anh như mình - sau này sẽ đứng lớp cho những đứa trẻ lớn lên cùng AI - không thể xem nhẹ. [ND 2.docx]
+                        Nhìn lại một hành trình: Lúc bắt đầu, mình nghĩ đây chỉ là một môn bắt buộc - làm bài, nộp đúng hạn, lấy điểm. Viết đến những dòng này mình mới nhận ra mình đã sai. Học phần này dạy mình nhiều hơn về công nghệ - nó dạy mình cách nhìn nhận bản thân trong một thế giới đang thay đổi quá nhanh, điều mà một sinh viên Sư phạm Tiếng Anh như mình - sau này sẽ đứng lớp cho những đứa trẻ lớn lên cùng AI - không thể xem nhẹ.
                     </p>
                     
                     <div class="bg-white/70 p-5 rounded-2xl border border-slate-200 shadow-sm space-y-3">
@@ -689,15 +689,15 @@
                             <i data-lucide="heart" class="text-rose-500 w-4 h-4"></i>
                             <span>Điều đọng lại nhiều nhất trong mình:</span>
                         </p>
-                        <ul class="space-y-2 text-xs md:text-sm text-slate-950 list-inside list-disc">
-                            <li><strong>Tư duy phản biện với thông tin số:</strong> Mình không còn tin ngay những gì đọc được, mà biết hỏi ai viết, vì mục đích gì, có kiểm chứng không. [ND 2.docx]</li>
-                            <li><strong>Hiểu AI đúng nghĩa:</strong> Không thần thánh hóa, không sợ hãi, xem nó là công cụ mạnh mẽ nhưng thiếu thấu cảm và trải nghiệm sống thực tế. [ND 2.docx]</li>
-                            <li><strong>Ý thức về liêm chính học thuật:</strong> Khi AI viết bài trong vài giây, ranh giới giữa "hỗ trợ" và "gian lận" mờ hơn bao giờ hết, học phần giúp mình xác lập vững chắc ranh giới đó. [ND 2.docx]</li>
+                        <ul class="space-y-2 text-xs md:text-sm text-slate-955 list-inside list-disc">
+                            <li><strong>Tư duy phản biện với thông tin số:</strong> Mình không còn tin ngay những gì đọc được, mà biết hỏi ai viết, vì mục đích gì, có kiểm chứng không.</li>
+                            <li><strong>Hiểu AI đúng nghĩa:</strong> Không thần thánh hóa, không sợ hãi, xem nó là công cụ mạnh mẽ nhưng thiếu thấu cảm và trải nghiệm sống thực tế.</li>
+                            <li><strong>Ý thức về liêm chính học thuật:</strong> Khi AI viết bài trong vài giây, ranh giới giữa "hỗ trợ" và "gian lận" mờ hơn bao giờ hết, học phần giúp mình xác lập vững chắc ranh giới đó.</li>
                         </ul>
                     </div>
 
                     <p>
-                        Không phải một bài tập cụ thể, điều mình tâm đắc nhất chính là thói quen dừng lại và suy nghĩ trước khi hành động trong môi trường số—trước khi chia sẻ, trước khi nhờ cậy AI, hay đăng một cái gì đó lên mạng xã hội. Thói quen nhỏ nhưng sẽ đồng hành lâu dài cùng mình trên bục giảng tương lai. [ND 2.docx]
+                        Không phải một bài tập cụ thể, điều mình tâm đắc nhất chính là thói quen dừng lại và suy nghĩ trước khi hành động trong môi trường số—trước khi chia sẻ, trước khi nhờ cậy AI, hay đăng một cái gì đó lên mạng xã hội. Thói quen nhỏ nhưng sẽ đồng hành lâu dài cùng mình trên bục giảng tương lai.
                     </p>
                 </div>
             </div>
